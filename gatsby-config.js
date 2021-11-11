@@ -14,12 +14,12 @@ module.exports = {
   flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     {
-      resolve: `@rocketseat/gatsby-theme-docs`,
+      resolve: `@uideck/docs-uideck`,
       options: {
         configPath: `src/config`,
         docsPath: `src/docs`,
-        repositoryUrl: `https://github.com/jpedroschmitz/rocketdocs`,
-        baseDir: `examples/gatsby-theme-docs`,
+        repositoryUrl: `https://github.com/uideck/docs-uideck`,
+        baseDir: `/`,
       },
     },
     {

@@ -4,7 +4,7 @@ module.exports = {
     defaultTitle: `UIdeck Docs`,
     siteTitleShort: `UIdeck Docs`,
     siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
-    siteUrl: `https://rocketdocs.netlify.app`,
+    siteUrl: `https://docs.uideck.com`,
     siteAuthor: `@uideck`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
@@ -44,7 +44,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://rocketdocs.netlify.app`,
+        siteUrl: `https://docs.uideck.com`,
       },
     },
     `gatsby-plugin-offline`,

@@ -1,0 +1,67 @@
+---
+title: "TailwindCSS Template | UIdeck Docs"
+description: TailwindCSS Template Docs.
+---
+
+## Introduction
+
+We use plain HTML and TailwindCSS to create static templates, and few vanilla JS plugins for interaction (like slider, video and image popup).
+
+## File Structure
+
+Here is the structure of download folder.
+
+```
+|-- Template Folder
+    |-- src
+    |    |-- css
+    |       |-- All CSS Files
+    |    |-- js
+    |       |-- All JS Files
+    |    |-- images
+    |       |-- All Images
+    |    |-- index.html and All HTML Files
+    |    |-- tailwind.css (you have to edit on this file if needed)
+    |
+    |-- build
+    |    |-- All build files you have to deploy
+    |
+    |-- All Config files
+```
+
+If you want to edit just go with `src` folder here you will get all files.
+
+## Installation
+
+As we need to install our dependencies we need to have NODEJS installed in our machine. Then we can install via run the command below after the downloading file.
+
+```bash
+npm install
+```
+
+After installing the packages you can view the template in any browser or edit the template. If you edit any thing you have to run the command below to build css.
+
+```bash
+npm run build-css
+```
+
+## Deploying to server
+
+To deploy your template on the internet you have to run the command below, and then you have to just upload the `build` folder to your server. It will obfuscate the css class names. If you want to ignore this just go with `src` folder and upload to you server.
+
+If you are using github repo then you can go with free of cost and easy to use [Netlify](https://netlify.com).
+
+## Plugins
+
+We use some of vanilla js plugins for interaction.
+
+- [Glightbox](https://biati-digital.github.io/glightbox/)
+- [Tiny Slider](https://github.com/ganlanyuan/tiny-slider)
+- [Wow JS](https://wowjs.uk/docs.html)
+- [Animate CSS](https://animate.style/) - with some modification
+
+## Images
+
+We use images form Unsplash
+
+- [Unsplash](https://unsplash.com/)

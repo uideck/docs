@@ -51,6 +51,14 @@ To deploy your template on the internet you have to run the command below, and t
 
 If you are using github repo then you can go with free of cost and easy to use [Netlify](https://netlify.com).
 
+## Removing ud- prefix from HTML files
+
+We added class prefix intentionally to make your template/site copy protected. Since Tailwind is utility class based so, anyone can copy-paste your code and get same results. You can remove class prefix by simply following 3 steps.
+
+- Find and replace "ud-“ with empty text from all HTML files (src/html-files)
+- And remove   prefix: "ud-“, from tailwind.config.js file
+- Compile your code again, done!
+
 ## Plugins we use
 
 We use some of vanilla js plugins for interaction.

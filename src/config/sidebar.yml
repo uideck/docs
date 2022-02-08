@@ -8,3 +8,5 @@
   link: "/bootstrap-template"
 - label: "Tailwind Template"
   link: "/tailwind-template"
+- label: "Configuring Contact Form"
+  link: "/contact-form"

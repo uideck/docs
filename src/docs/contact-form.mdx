@@ -1,0 +1,31 @@
+---
+title: "Configuring Contact Form"
+description: How to configure HTML contact form that comes with website template to make it work.
+---
+
+## Using PHP Contact Form
+For Bootstrap templates, we used to provide a PHP script that only can be used for PHP servers if phpmailer function is up and running smoothly. Here is how it works:
+Just **replace the email address with your own** from 
+
+```
+assets->php>contact.php
+```
+This procedure should work if everything is configured properly in the server-side.
+
+## Using endpoint. Universal serverless and simple (Recommended)
+We highly recommend, using a serverless end-point to make contact form dynamic. Since most of the users nowadays don't use PHP servers we developed a universal form API that works with all platforms and hosting.
+
+```
+<form
+  action="https://formbold.com/s/unique_form_id" method="POST">
+
+     <input type="email" placeholder="email" name="email">
+     <input type="text" placeholder="subject" name="subject">
+     <textarea name="message" placeholder="message"></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+```
+
+Here all you need to **copy-paste the endpoint URL** that you will get when you join [FormBold](https://formbold.com)
+Your form will become dynamic immediately and you can receive submissions to multiple channels including emails.

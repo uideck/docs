@@ -59,6 +59,17 @@ We added class prefix intentionally to make your template/site copy protected. S
 - And remove   prefix: "ud-“, from tailwind.config.js file
 - Compile your code again, done!
 
+## Dark-Light Mode Settings
+Some of our Tailwind templates has dark mode switcher, here is how you can switch your entire template into to single mode (dark or light)
+
+### Light mode
+If you want to use template Light version permanently, you need to remove the script from **main.js** file of template directory. If Templatee comes with dark mode by default you have to remove ud-dark class from html tag.
+
+### Dark mode
+If you want to make dark-mode default, you have to add **ud-dark** class to the html tag. Also you have to remove the script coded on **main.js** file.
+
+And don't forget to remove the toggle button from html files.
+
 ## Plugins we use
 
 We use some of vanilla js plugins for interaction.

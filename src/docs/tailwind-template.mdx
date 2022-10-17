@@ -20,11 +20,10 @@ Here is the structure of download folder.
     |       |-- All JS Files
     |    |-- images
     |       |-- All Images
-    |    |-- index.html and All HTML Files
-    |    |-- tailwind.css (you have to edit on this file if needed)
+    |    |-- partials
+    |       |-- HTML Common Sections Like Header, Footer etc
+    |    |-- index.html and All HTML Pages Files
     |
-    |-- build
-    |    |-- All build files you have to deploy
     |
     |-- All Config files
 ```
@@ -39,34 +38,30 @@ As we need to install our dependencies we need to have NODEJS installed in our m
 npm install
 ```
 
-After installing the packages you can view the template in any browser or edit the template. If you edit any thing you have to run the command below to build css.
+After installing the packages you can view the template in any browser or edit the template by using the dev version to use the dev version just give this command in project root. And then it will automatically open  localhost:3000 in your default browser
 
 ```bash
-npm run build-css
+npm start
 ```
 
 ## Deploying to server
 
-To deploy your template on the internet you have to run the command below, and then you have to just upload the `build` folder to your server. It will obfuscate the css class names. If you want to ignore this just go with `src` folder and upload to you server.
+To deploy your template on the internet you have to run the command below, and then you have to just upload the `build` folder to your server.
+
+```bash
+npm run build
+```
 
 If you are using github repo then you can go with free of cost and easy to use [Netlify](https://netlify.com).
-
-## Removing ud- prefix from HTML files
-
-We added class prefix intentionally to make your template/site copy protected. Since Tailwind is utility class based so, anyone can copy-paste your code and get same results. You can remove class prefix by simply following 3 steps.
-
-- Find and replace "ud-“ with empty text from all HTML files (src/html-files)
-- And remove   prefix: "ud-“, from tailwind.config.js file
-- Compile your code again, done!
 
 ## Dark-Light Mode Settings
 Some of our Tailwind templates has dark mode switcher, here is how you can switch your entire template into to single mode (dark or light)
 
 ### Light mode
-If you want to use template Light version permanently, you need to remove the script from **main.js** file of template directory. If Templatee comes with dark mode by default you have to remove ud-dark class from html tag.
+If you want to use template Light version permanently, you need to just update the ***body tag of All Pages x-data={'darkMode': false}***. 
 
 ### Dark mode
-If you want to make dark-mode default, you have to add **ud-dark** class to the html tag. Also you have to remove the script coded on **main.js** file.
+If you want to make dark-mode default, you need to just update the ***body tag of All Pages x-data={'darkMode': true}***. 
 
 And don't forget to remove the toggle button from html files.
 
@@ -74,6 +69,9 @@ And don't forget to remove the toggle button from html files.
 
 We use some of vanilla js plugins for interaction.
 
+- [Swiper JS](https://swiperjs.com/get-started/)
+- [fslightbox JS](https://fslightbox.com/javascript/documentation/installation/)
+- [ScrollReveal JS](https://scrollrevealjs.org/)
 - [Glightbox](https://biati-digital.github.io/glightbox/)
 - [Tiny Slider](https://github.com/ganlanyuan/tiny-slider)
 - [Wow JS](https://wowjs.uk/docs.html)

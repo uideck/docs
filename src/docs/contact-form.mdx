@@ -3,19 +3,37 @@ title: "Configuring Contact Form"
 description: How to configure HTML contact form that comes with website template to make it work.
 ---
 
-## Using PHP Contact Form
-For Bootstrap templates, we used to provide a PHP script that only can be used for PHP servers if phpmailer function is up and running smoothly. Here is how it works:
-Just **replace the email address with your own** from 
+## Introduction
 
-```
+This part of the documentation shows you how you can configure a contact form with Tailwind CSS Templates and Bootstrap Templates. 
+
+## **Using PHP Contact Form:**
+
+For Bootstrap templates, we used to provide a PHP script that only can be used for PHP servers,
+
+if `phpmailer` function is up and running smoothly. 
+
+Here is how it works: Just **replace the email address with your own** from
+
+```jsx
 assets->php>contact.php
 ```
-This procedure should work if everything is configured properly in the server-side.
 
-## Using endpoint. Universal serverless and simple (Recommended)
-We highly recommend, using a serverless end-point to make contact form dynamic. Since most of the users nowadays don't use PHP servers we developed a universal form API that works with all platforms and hosting.
+This procedure should work if everything is configured properly on the server side.
 
-```
+## Using FormBold: A universal Form API (Recommended):
+
+[FormBold](https://formbold.com/) is a powerful form API and serverless form backend that works with all hosting, SSG, and frameworks. 
+
+We highly recommend, using a serverless end-point (FormBold) to make contact form dynamic, since most users nowadays don't use PHP servers.
+
+Here’s how to connect FormBold API with your contact form:
+
+**Step#1**: Create an account on FormBold and create a Form. 
+
+**Step#2**: Integrate the API into your contact Form using this code. Make sure your Form’s method is set to **POST**
+
+```html
 <form
   action="https://formbold.com/s/unique_form_id" method="POST">
 
@@ -27,5 +45,9 @@ We highly recommend, using a serverless end-point to make contact form dynamic. 
 </form>
 ```
 
-Here all you need to **copy-paste the endpoint URL** that you will get when you join [FormBold](https://formbold.com)
-Your form will become dynamic immediately and you can receive submissions to multiple channels including emails.
+You’ll find the `unique_form_id` in the [FormBold](https://formbold.com/) dashboard under ****Settings>Integration.**** 
+
+Copy and paste it to the **action** attribute. 
+
+This is just the basic setup, FormBold has a lot of great features like re-captcha for spam protection, and the ability to integrate it with other apps like Webhook, Slack, Notion, and GoogleSheet. 
+Learn more about [FormBold](https://formbold.com/) [here](https://formbold.com/).

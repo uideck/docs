@@ -10,3 +10,6 @@
   link: "/tailwind-template"
 - label: "Configuring Contact Form"
   link: "/contact-form"
+
+- label: "Community"
+  link: "https://pimjo.com/discord"
